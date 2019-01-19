@@ -88,14 +88,14 @@ The validation set including a [imagelist.txt](data/imagelist.txt) validation fi
 Some classification examples
 
 ** Right **
-![Right 1](./images/right_sample01.png)
-![Right 2](./images/right_sample02.png)
+![Right 1](./images/right_sample01.jpg)
+![Right 2](./images/right_sample02.jpg)
 ** Left **
-![Left 1](./images/left_sample01.png)
-![Left 2](./images/left_sample02.png)
+![Left 1](./images/left_sample01.jpg)
+![Left 2](./images/left_sample02.jpg)
 ** Straight **
-![Straight 1](./images/straight_sample01.png)
-![Straight 2](./images/straight_sample02.png)
+![Straight 1](./images/straight_sample01.jpg)
+![Straight 2](./images/straight_sample02.jpg)
 
 ## Results
 
@@ -141,6 +141,6 @@ Wrong results:
 
 
 ### Links:
-[detectnet](https://devblogs.nvidia.com/detectnet-deep-neural-network-object-detection-digits/)
-[Digits Getting Started](https://github.com/NVIDIA/DIGITS/blob/digits-6.0/docs/GettingStarted.md)
-[Digits Classification](https://github.com/NVIDIA/DIGITS/blob/master/examples/classification/README.md)
+ * [detectnet](https://devblogs.nvidia.com/detectnet-deep-neural-network-object-detection-digits/)
+ * [Digits Getting Started](https://github.com/NVIDIA/DIGITS/blob/digits-6.0/docs/GettingStarted.md)
+ * [Digits Classification](https://github.com/NVIDIA/DIGITS/blob/master/examples/classification/README.md)
