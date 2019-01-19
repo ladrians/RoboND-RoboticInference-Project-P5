@@ -88,12 +88,17 @@ The validation set including a [imagelist.txt](data/imagelist.txt) validation fi
 Some classification examples
 
 ** Right **
+
 ![Right 1](./images/right_sample01.jpg)
 ![Right 2](./images/right_sample02.jpg)
+
 ** Left **
+
 ![Left 1](./images/left_sample01.jpg)
 ![Left 2](./images/left_sample02.jpg)
+
 ** Straight **
+
 ![Straight 1](./images/straight_sample01.jpg)
 ![Straight 2](./images/straight_sample02.jpg)
 
