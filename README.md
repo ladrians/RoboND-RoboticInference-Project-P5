@@ -9,7 +9,7 @@ It builds an inference engine extracting information from a race truck.
 
 The data was collected using a [donkeycar2 robocar](http://www.donkeycar.com/) following a standard track.
 
-The trained model uses [NVIDIA DIGITS](https://docs.nvidia.com/deeplearning/digits/digits-installation/index.html) infraestructure to classify if the rover needs to go: straight, turn left or right.
+The trained model uses [NVIDIA DIGITS](https://docs.nvidia.com/deeplearning/digits/digits-installation/index.html) infrastructure to classify if the rover needs to go: straight, turn left or right.
 
 ## Introduction
 
@@ -17,7 +17,7 @@ In the last few year the development of robotics applications using Machine Lear
 
 This project explores the usage of NVIDIA's DIGITS software to be used as an inference engine.
 
-Two models where built using the software; the first one using the standard dataset provided by Udacity to get used to the software, parameters and so on. Then, another model to be used with the collected data for the specific robocar usage, a classifier to detect a robot within a truck and the possible actions to do: go `Staight`, turn `Left` or `Right`.
+Two models where built using the software; the first one using the standard dataset provided by Udacity to get used to the software, parameters and so on. Then, another model to be used with the collected data for the specific robocar usage, a classifier to detect a robot within a truck and the possible actions to do: go `Straight`, turn `Left` or `Right`.
 
 ## Background
 
@@ -33,7 +33,7 @@ For the first part of the project, the images provided are 256x256 RGB images. T
 
  * Model: GoogLeNet
  * Epochs: 10
- * Learning Rate: 0.01 
+ * Learning Rate: 0.01
 
 ### Directions
 
@@ -74,7 +74,7 @@ P1_data/
 ```
 
 For training and validation the data was automatically separated as follows:
-	
+
 **Training**
 
  * Bottle: 3426 images
@@ -177,25 +177,25 @@ Using the selected list of validation samples got the following results:
 
 ```
 Path	Top predictions
-1	/home/workspace/validation01/Straight/2763_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
-2	/home/workspace/validation01/Straight/2806_cam-image_array_.jpg	Straight	78.66%	Right	16.33%	Left	5.01%
-3	/home/workspace/validation01/Straight/2817_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
-4	/home/workspace/validation01/Straight/2867_cam-image_array_.jpg	Straight	99.99%	Right	0.01%	Left	0.0%
-5	/home/workspace/validation01/Straight/2920_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
-6	/home/workspace/validation01/Straight/2920_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
-7	/home/workspace/validation01/Left/2678_cam-image_array_.jpg	Left	63.38%	Right	36.52%	Straight	0.1%
-8	/home/workspace/validation01/Left/2744_cam-image_array_.jpg	Left	63.87%	Right	36.1%	Straight	0.03%
-9	/home/workspace/validation01/Left/2792_cam-image_array_.jpg	Left	70.39%	Right	29.6%	Straight	0.01%
-10	/home/workspace/validation01/Left/2852_cam-image_array_.jpg	Left	57.24%	Right	42.7%	Straight	0.07%
-11	/home/workspace/validation01/Left/2952_cam-image_array_.jpg	Right	52.54%	Left	47.05%	Straight	0.41%
-12	/home/workspace/validation01/Left/2996_cam-image_array_.jpg	Left	67.02%	Right	32.97%	Straight	0.02%
-13	/home/workspace/validation01/Right/2641_cam-image_array_.jpg	Right	58.7%	Left	38.15%	Straight	3.14%
-14	/home/workspace/validation01/Right/2693_cam-image_array_.jpg	Left	56.53%	Right	43.41%	Straight	0.06%
-15	/home/workspace/validation01/Right/2736_cam-image_array_.jpg	Right	52.84%	Left	46.56%	Straight	0.6%
-16	/home/workspace/validation01/Right/3043_cam-image_array_.jpg	Left	55.91%	Right	43.51%	Straight	0.58%
-17	/home/workspace/validation01/Right/3187_cam-image_array_.jpg	Left	53.16%	Right	46.51%	Straight	0.33%
-18	/home/workspace/validation01/Right/3459_cam-image_array_.jpg	Right	56.95%	Left	42.4%	Straight	0.65%
-19	/home/workspace/validation01/Right/3610_cam-image_array_.jpg	Left	53.51%	Right	46.25%	Straight	0.24%
+1	Straight/2763_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
+2	Straight/2806_cam-image_array_.jpg	Straight	78.66%	Right	16.33%	Left	5.01%
+3	Straight/2817_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
+4	Straight/2867_cam-image_array_.jpg	Straight	99.99%	Right	0.01%	Left	0.0%
+5	Straight/2920_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
+6	Straight/2920_cam-image_array_.jpg	Straight	100.0%	Right	0.0%	Left	0.0%
+7	Left/2678_cam-image_array_.jpg	Left	63.38%	Right	36.52%	Straight	0.1%
+8	Left/2744_cam-image_array_.jpg	Left	63.87%	Right	36.1%	Straight	0.03%
+9	Left/2792_cam-image_array_.jpg	Left	70.39%	Right	29.6%	Straight	0.01%
+10	Left/2852_cam-image_array_.jpg	Left	57.24%	Right	42.7%	Straight	0.07%
+11	Left/2952_cam-image_array_.jpg	Right	52.54%	Left	47.05%	Straight	0.41%
+12	Left/2996_cam-image_array_.jpg	Left	67.02%	Right	32.97%	Straight	0.02%
+13	Right/2641_cam-image_array_.jpg	Right	58.7%	Left	38.15%	Straight	3.14%
+14	Right/2693_cam-image_array_.jpg	Left	56.53%	Right	43.41%	Straight	0.06%
+15	Right/2736_cam-image_array_.jpg	Right	52.84%	Left	46.56%	Straight	0.6%
+16	Right/3043_cam-image_array_.jpg	Left	55.91%	Right	43.51%	Straight	0.58%
+17	Right/3187_cam-image_array_.jpg	Left	53.16%	Right	46.51%	Straight	0.33%
+18	Right/3459_cam-image_array_.jpg	Right	56.95%	Left	42.4%	Straight	0.65%
+19	Right/3610_cam-image_array_.jpg	Left	53.51%	Right	46.25%	Straight	0.24%
 ```
 
 #### Training Results
@@ -210,7 +210,7 @@ The training result are as follows:
 
 The first model satisfactory met the given requirements; classification confidence of 75.4% and approximately avearge evaluation time of 5ms.
 
-The second model got an accuracy of 76.2% for the training model. More data needs to be collected and classified to improve these values. This model will only work on the specified track as no processing is done on the images. 
+The second model got an accuracy of 76.2% for the training model. More data needs to be collected and classified to improve these values. This model will only work on the specified track as no processing is done on the images.
 
 On the evaluation phase in particular the `Right` and `Left` classes got wrong values and in some cases a very close score:
 
